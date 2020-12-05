@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.div`
   color: #fff;
-  background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#010606")};
+  background: ${({ lightBg }) => (lightBg ? "#FFF3D9" : "#010606")};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -25,10 +25,12 @@ export const AboutRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
-  grid-template-areas: ${({ imgStart }) => (imgStart ? `'col2 col1` : `'col1 col2'`)};
+  grid-template-areas: ${({ imgStart }) =>
+    imgStart ? `'col2 col1` : `'col1 col2'`};
 
   @media screen and (max-width: 768px) {
-    grid-template-areas: ${({ imgStart }) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
+    grid-template-areas: ${({ imgStart }) =>
+      imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
   }
 `;
 
@@ -50,7 +52,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-  color: #01bf71;
+  color: #ff8300;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
@@ -90,6 +92,12 @@ export const ImgWrap = styled.div`
 `;
 
 export const Img = styled.img`
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding-right: 0;
+`;
+
+export const Vid = styled.video`
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;

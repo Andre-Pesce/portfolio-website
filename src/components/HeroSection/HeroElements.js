@@ -6,7 +6,7 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 1080px;
+  height: 880.909px;
   poistion: relative;
   z-index: 1;
 
@@ -25,6 +25,26 @@ export const HeroContainer = styled.div`
       linear-gradient(180 deg, rgba(0, 0, 0, 0.2) 0%, transparent);
     z-index: 2;
   }
+
+  ${"" /* Galaxy S10 */}
+  @media screen and (max-height: 760px) {
+    height: 760px;
+  }
+
+  ${"" /* Galaxy S7/S8/S9/Note 8/Note 9 */}
+  @media screen and (max-height: 740px) {
+    height: 740px;
+  }
+
+  ${"" /* Iphone 6/7/8 Plus */}
+  @media screen and (max-height: 736px) {
+    height: 736px;
+  }
+
+  ${"" /* Iphone 6/7/8 */}
+  @media screen and (max-height: 667px) {
+    height: 667px;
+  }
 `;
 
 export const HeroBg = styled.div`
@@ -41,7 +61,7 @@ export const HeroBg = styled.div`
 export const VideoBg = styled.video`
   width: 100%;
   height: 100%;
-  -o-object0fit: cover;
+  -o-object-fit: cover;
   object-fit: cover;
   background: #232a34;
 `;
@@ -63,10 +83,6 @@ export const HeroH1 = styled.h1`
 
   @media screen and (max-width: 768px) {
     font-size: 40px;
-  }
-
-  @media screen and (max-width: 480px) {
-    font-size: 32px;
   }
 `;
 

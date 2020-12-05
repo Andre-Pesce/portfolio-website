@@ -16,23 +16,14 @@ import {
 const Portfolio = () => {
   return (
     <PortfolioContainer id="portfolio">
-      <PortfolioH1>Portfolio</PortfolioH1>
+      <PortfolioH1>PORTFOLIO</PortfolioH1>
       <PortfolioWrapper>
         <PortfolioCard>
           <PortfolioIcon src={Icon1} />
           <PortfolioH2>Engineering Data Management System</PortfolioH2>
           <PortfolioP>Created with Django Framework</PortfolioP>
         </PortfolioCard>
-        <PortfolioCard>
-          <PortfolioIcon src={Icon2} />
-          <PortfolioH2>Portfolio Website</PortfolioH2>
-          <PortfolioP>Created with React Framework</PortfolioP>
-        </PortfolioCard>
-        <PortfolioCard>
-          <PortfolioIcon src={Icon3} />
-          <PortfolioH2>TBA</PortfolioH2>
-          <PortfolioP></PortfolioP>
-        </PortfolioCard>
+
       </PortfolioWrapper>
     </PortfolioContainer>
   );

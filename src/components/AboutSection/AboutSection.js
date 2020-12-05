@@ -1,6 +1,5 @@
 import React from "react";
 import { Button } from "../ButtonElements";
-import svg from '../../assets/images/svg-1.svg'
 
 import {
   AboutContainer,
@@ -15,6 +14,7 @@ import {
   BtnWrap,
   ImgWrap,
   Img,
+  Vid,
 } from "./AboutElements";
 
 const AboutSection = ({
@@ -27,6 +27,7 @@ const AboutSection = ({
   darkText,
   description,
   buttonLabel,
+  isVid,
   img,
   alt,
   primary,
@@ -42,7 +43,7 @@ const AboutSection = ({
               <TopLine>{topLine}</TopLine>
               <Heading lightText={lightText}>{headline}</Heading>
               <Subtitle darkText={darkText}>{description}</Subtitle>
-              <BtnWrap>
+              {/* <BtnWrap>
                 <Button
                   to="home"
                   smooth={true}
@@ -53,14 +54,19 @@ const AboutSection = ({
                   primary={primary ? 1 : 0}
                   dark={dark ? 1 : 0}
                   dark2={dark2 ? 1 : 0}
-                >{buttonLabel}
+                >
+                  {buttonLabel}
                 </Button>
-              </BtnWrap>
+              </BtnWrap> */}
             </TextWrapper>
           </Column1>
           <Column2>
             <ImgWrap>
-              <Img src={svg} alt={alt}/>
+              {isVid ? (
+                <Vid autoPlay loop muted src={img} type="video/mp4" />
+              ) : (
+                <Img src={img} alt={alt} />
+              )}
             </ImgWrap>
           </Column2>
         </AboutRow>

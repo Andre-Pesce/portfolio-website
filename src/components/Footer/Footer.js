@@ -1,6 +1,6 @@
 import React from "react";
 import {animateScroll as scroll } from 'react-scroll'
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import {
   FooterContainer,
   FooterWrap,
@@ -25,7 +25,7 @@ const Footer = () => {
   return (
     <FooterContainer>
       <FooterWrap>
-        <FooterLinksContainer>
+        {/* <FooterLinksContainer>
           <FooterLinksWrapper>
             <FooterLinkItems>
               <FooterLinkTitle>About us</FooterLinkTitle>
@@ -58,17 +58,17 @@ const Footer = () => {
               <FooterLink>Link</FooterLink>
             </FooterLinkItems>
           </FooterLinksWrapper>
-        </FooterLinksContainer>
+        </FooterLinksContainer> */}
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to="/" onClick={toggleHome}>Andre</SocialLogo>
+            {/* <SocialLogo to="/" onClick={toggleHome}>Andre</SocialLogo> */}
             <WebsiteRights>
-              made by Andre Pesce {new Date().getFullYear()}
+            © {new Date().getFullYear()} Andre Pesce
             </WebsiteRights>
             <SocialIcons>
               <SocialIconLink
                 href="//www.linkedin.com/in/andre-pesce/"
-                target="_blank"
+                target="_blank" 
                 aria-label="LinkedIn"
               >
                 <FaLinkedin />
@@ -79,6 +79,19 @@ const Footer = () => {
                 aria-label="GitHub"
               >
                 <FaGithub />
+              </SocialIconLink>
+              <SocialIconLink
+                href="//www.twitter.com/andrepesce"
+                target="_blank"
+                aria-label="Twitter"
+              >
+                <FaTwitter />
+              </SocialIconLink>
+              <SocialIconLink
+                href="mailto:andrepesce95@hotmail.com"
+                aria-label="e-mail"
+              >
+                <FaEnvelope />
               </SocialIconLink>
             </SocialIcons>
           </SocialMediaWrap>
