@@ -4,21 +4,23 @@ export const AboutContainer = styled.div`
   color: #fff;
   background: ${({ lightBg }) => (lightBg ? "#FFF3D9" : "#010606")};
 
-  @media screen and (max-width: 768px) {
-    padding: 100px 0;
-  }
 `;
 
 export const AboutWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 1050px;
+  height: 969px;
   width: 100%;
-  max-width: 1400px;
+  max-width: 1800px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
   justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    height: 730px;
+  }
+  
 `;
 
 export const AboutRow = styled.div`
@@ -32,12 +34,21 @@ export const AboutRow = styled.div`
     grid-template-areas: ${({ imgStart }) =>
       imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
   }
+  
+  @media screen and (max-width: 1209px) {
+    grid-template-areas: ${({ imgStart }) =>
+      imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
+  }
 `;
 
 export const Column1 = styled.div`
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   padding: 0 15px;
   grid-area: col1;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 0px;
+  }
 `;
 
 export const Column2 = styled.div`
@@ -46,9 +57,19 @@ export const Column2 = styled.div`
   grid-area: col2;
 `;
 export const TextWrapper = styled.div`
-  max-width: 540px;
+  max-width: 640px;
   padding-top: 0;
   padding-bottom: 60px;
+  padding-left: 100px;
+
+  @media screen and (max-width: 768px) {
+    padding-bottom: 0px;
+    padding-left: 0px;
+  }
+
+  @media screen and (max-width: 1209px) {
+    margin-top: 40px;
+  }
 `;
 
 export const TopLine = styled.p`
@@ -79,6 +100,10 @@ export const Subtitle = styled.p`
   font-size: 18px;
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? "#fff" : "#010606")};
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 0px;
+  }
 `;
 
 export const BtnWrap = styled.div`
@@ -87,8 +112,9 @@ export const BtnWrap = styled.div`
 `;
 
 export const ImgWrap = styled.div`
-  max-width: 650px;
+  max-width: 800px;
   height: 100%;
+  
 `;
 
 export const Img = styled.img`
@@ -101,4 +127,5 @@ export const Vid = styled.video`
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
+  
 `;
