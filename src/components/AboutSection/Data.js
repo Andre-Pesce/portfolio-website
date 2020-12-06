@@ -1,6 +1,7 @@
 import React from "react";
 import vid1 from "../../assets/videos/edms-demo-1.mp4";
 import img1 from "../../assets/images/edms-run-2.png";
+import svg1 from "../../assets/images/svg-1.svg"
 
 export const homeObjOne = {
     id: 'about',
@@ -13,7 +14,7 @@ export const homeObjOne = {
     buttonLabel: 'Get started',
     imgStart: false,
     isVid: false,
-    img: img1,
+    img: svg1,
     alt: 'me',
     dark: true,
     primary: true,
@@ -31,7 +32,7 @@ export const homeObjTwo = {
     buttonLabel: 'Get started',
     imgStart: false,
     isVid: false,
-    img: img1,
+    img: svg1,
     alt: 'me',
     dark: true,
     primary: true,

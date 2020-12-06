@@ -12,9 +12,9 @@ export const AboutContainer = styled.div`
 export const AboutWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 860px;
+  height: 1050px;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1400px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
@@ -87,7 +87,7 @@ export const BtnWrap = styled.div`
 `;
 
 export const ImgWrap = styled.div`
-  max-width: 555px;
+  max-width: 650px;
   height: 100%;
 `;
 
