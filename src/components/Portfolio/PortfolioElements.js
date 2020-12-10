@@ -1,88 +1,77 @@
 import styled from "styled-components";
 
 export const PortfolioContainer = styled.div`
-  height: 860px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #FFF3D9;
-
-  ${'' /* @media screen and (max-width: 768px) {
-    height: 1100px;
-  }
-
-  @media screen and (max-width: 480px) {
-    height: 1300px;
-  } */}
+  color: #fff;
+  background: ${({ lightBg }) => (lightBg ? "#FFF3D9" : "#010606")};
 `;
 
 export const PortfolioWrapper = styled.div`
-  max-width: 1000px;
-  margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  z-index: 1;
+  height: 969px;
+  width: 100%;
+  max-width: 1800px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 24px;
+  justify-content: center;
+
+  @media screen and (max-width: 768px) {
+    height: 730px;
+  }
+`;
+
+export const PortfolioRow = styled.div`
+  display: grid;
+  grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
-  grid-gap: 16px;
-  padding: 0 50px;
+  grid-template-areas: ${({ imgStart }) =>
+    imgStart ? `'col2 col1` : `'col1 col2'`};
 
-  @media screen and (max-width: 1000px) {
-    grid-template-columns: 1fr 1fr;
+  @media screen and (max-width: 768px) {
+    grid-template-areas: ${({ imgStart }) =>
+      imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
   }
 
-  @media screen and (max-with: 768px) {
-    grid-template-columns: 1fr;
-    padding: 0 20px;
+  @media screen and (max-width: 1209px) {
+    grid-template-areas: ${({ imgStart }) =>
+      imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
   }
 `;
 
-export const PortfolioCard = styled.div`
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  border-radius: 10px;
-  max-height: 340px;
-  padding: 30px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-      transform: scale(1.02);
-      transition: all 0.2s ease-in-out;
-      cursor: pointer;
-  } 
-`;
-
-export const PortfolioIcon = styled.img`
-  height: 160px;
-  width: 160px;
+export const Column1 = styled.div`
   margin-bottom: 10px;
-`;
+  padding: 0 15px;
+  grid-area: col1;
 
-export const PortfolioH1 = styled.h1`
-  font-size: 2.5rem;
-  color: #FF8300;
-  margin-bottom: 64px;
-
-  @media screen and (max-width: 480px) {
-    font-size: 2rem;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 0px;
   }
 `;
 
-export const PortfolioH2 = styled.h2`
-  font-size: 1rem;
-  margin-bottom: 10px;
+export const Column2 = styled.div`
+  margin-bottom: 15px;
+  padding: 0 15px;
+  grid-area: col2;
 `;
+export const TextWrapper = styled.div`
+  max-width: 640px;
+  padding-top: 0;
+  padding-bottom: 60px;
+  padding-left: 100px;
 
-export const PortfolioP = styled.p`
-  font-size: 1rem;
-  text-align: center;
+  @media screen and (max-width: 768px) {
+    padding-bottom: 0px;
+    padding-left: 0px;
+  }
+
+  @media screen and (max-width: 1209px) {
+    margin-top: 40px;
+  }
 `;
 
 export const TopLine = styled.p`
-  color: #FF8300;
+  color: #ff8300;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
@@ -100,5 +89,54 @@ export const Heading = styled.h1`
 
   @media screen and (max-width: 480px) {
     font-size: 32px;
+  }
+`;
+
+export const Subtitle = styled.p`
+  max-width: 600px;
+  margin-bottom: 35px;
+  font-size: 18px;
+  line-height: 24px;
+  white-space: pre-wrap;
+  color: ${({ darkText }) => (darkText ? "#fff" : "#010606")};
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 0px;
+  }
+`;
+
+export const BtnWrap = styled.div`
+  display: flex;
+  justify-content: flex-start;
+`;
+
+export const ImgWrap = styled.div`
+  max-width: 800px;
+  height: 100%;
+`;
+
+export const Img = styled.img`
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding-right: 0;
+`;
+
+export const Vid = styled.video`
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding-right: 0;
+`;
+
+export const FadeInSection = styled.div`
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+
+  &:is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
   }
 `;

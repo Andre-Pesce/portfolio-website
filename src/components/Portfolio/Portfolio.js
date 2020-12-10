@@ -1,29 +1,54 @@
 import React from "react";
-import Icon1 from '../../assets/images/edms-search-sample.png'
-import Icon2 from '../../assets/images/edms-search-sample.png'
-import Icon3 from '../../assets/images/edms-search-sample.png'
 
 import {
   PortfolioContainer,
-  PortfolioH1,
   PortfolioWrapper,
-  PortfolioCard,
-  PortfolioIcon,
-  PortfolioH2,
-  PortfolioP,
+  PortfolioRow,
+  Column1,
+  Column2,
+  TextWrapper,
+  TopLine,
+  Heading,
+  Subtitle,
+  ImgWrap,
+  Img,
+  Vid,
 } from "./PortfolioElements";
 
-const Portfolio = () => {
+const Portfolio = ({
+  lightBg,
+  id,
+  imgStart,
+  topLine,
+  lightText,
+  headline,
+  darkText,
+  description,
+  isVid,
+  img,
+  alt,
+}) => {
   return (
-    <PortfolioContainer id="portfolio">
-      <PortfolioH1>PORTFOLIO</PortfolioH1>
+    <PortfolioContainer lightBg={lightBg} id={id}>
       <PortfolioWrapper>
-        <PortfolioCard>
-          <PortfolioIcon src={Icon1} />
-          <PortfolioH2>Engineering Data Management System</PortfolioH2>
-          <PortfolioP>Created with Django Framework</PortfolioP>
-        </PortfolioCard>
-
+        <PortfolioRow imgStart={imgStart}>
+          <Column1>
+            <TextWrapper>
+              <TopLine>{topLine}</TopLine>
+              <Heading lightText={lightText}>{headline}</Heading>
+              <Subtitle darkText={darkText}>{description}</Subtitle>
+            </TextWrapper>
+          </Column1>
+          <Column2>
+            <ImgWrap>
+              {isVid ? (
+                <Vid autoPlay loop muted src={img} type="video/mp4" />
+              ) : (
+                <Img src={img} alt={alt} />
+              )}
+            </ImgWrap>
+          </Column2>
+        </PortfolioRow>
       </PortfolioWrapper>
     </PortfolioContainer>
   );
