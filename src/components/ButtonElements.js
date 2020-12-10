@@ -21,3 +21,32 @@ export const Button = styled(Link)`
     background: ${({ primary }) => (primary ? "#fff" : "#01BF71")};
   }
 `;
+
+
+export const ResumeButton = styled.a`
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 4px;
+  border-color: ${({ primary }) => (primary ? "#FF8300" : "#010606")};
+  background-color: transparent;
+  white-space: nowrap;
+  padding: ${({ big }) => (big ? "13px 48px" : "10px 15px")};
+  color: ${({ dark }) => (dark ? "#FF8300" : "#fff")};
+  font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
+  margin-top: 14px;
+  margin-bottom: 10px;
+  margin-left: 24px;
+  text-decoration: none;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: rgba(255, 131, 0, 0.2)
+  }
+`;

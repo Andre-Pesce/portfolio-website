@@ -45,7 +45,7 @@ export const homeObjThree = {
     lightTextDesc: true,
     topLine: 'Portfolio',
     headline: 'Engineering Data Management System',
-    description: 'Developed for researchers at University of South Australia for capstone project. Created with Django framework',
+    description: 'A web application developed for researchers at University of South Australia\'s Future Industries Institute (FII) conducting research on thin film coatings to store, manage & analyse test data. Functionality to upload various tests, sample metadata, export data, database search & filtering, data visualization and more. \nCreated with Django framework.',
     buttonLabel: 'Get started',
     imgStart: false,
     isVid: true,

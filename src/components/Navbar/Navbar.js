@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { animateScroll as scroll } from "react-scroll";
+import { ResumeButton } from "../ButtonElements";
+
 import {
   Nav,
   NavbarContainer,
@@ -90,6 +92,17 @@ const Navbar = ({ toggle }) => {
                 >
                   Contact
                 </NavLinks>
+              </NavItem>
+              <NavItem>
+                <ResumeButton
+                  href="../documents/Andre-Pesce-Resume.pdf"
+                  primary={1}
+                  dark={1}
+                  dark2={1}
+                  download
+                >
+                  Resume
+                </ResumeButton>
               </NavItem>
             </NavMenu>
           </NavbarContainer>

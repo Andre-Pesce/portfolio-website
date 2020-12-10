@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const AboutContainer = styled.div`
   color: #fff;
   background: ${({ lightBg }) => (lightBg ? "#FFF3D9" : "#010606")};
-
 `;
 
 export const AboutWrapper = styled.div`
@@ -20,7 +19,6 @@ export const AboutWrapper = styled.div`
   @media screen and (max-width: 768px) {
     height: 730px;
   }
-  
 `;
 
 export const AboutRow = styled.div`
@@ -34,7 +32,7 @@ export const AboutRow = styled.div`
     grid-template-areas: ${({ imgStart }) =>
       imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
   }
-  
+
   @media screen and (max-width: 1209px) {
     grid-template-areas: ${({ imgStart }) =>
       imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
@@ -95,10 +93,11 @@ export const Heading = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-  max-width: 440px;
+  max-width: 600px;
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
+  white-space: pre-wrap;
   color: ${({ darkText }) => (darkText ? "#fff" : "#010606")};
 
   @media screen and (max-width: 768px) {
@@ -114,7 +113,6 @@ export const BtnWrap = styled.div`
 export const ImgWrap = styled.div`
   max-width: 800px;
   height: 100%;
-  
 `;
 
 export const Img = styled.img`
@@ -127,5 +125,18 @@ export const Vid = styled.video`
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
-  
+`;
+
+export const FadeInSection = styled.div`
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+
+  &:is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
 `;

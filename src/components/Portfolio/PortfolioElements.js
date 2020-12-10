@@ -50,7 +50,7 @@ export const PortfolioCard = styled.div`
 
   &:hover {
       transform: scale(1.02);
-      transition: all 0.2s ease-in-out
+      transition: all 0.2s ease-in-out;
       cursor: pointer;
   } 
 `;
