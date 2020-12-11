@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../ButtonElements";
+import { EmailButton } from "../ButtonElements";
 
 import {
   ContactContainer,
@@ -43,6 +43,12 @@ const Contact = ({
               <TopLine>{topLine}</TopLine>
               <Subtitle darkText={darkText}>{description}</Subtitle>
             </TextWrapper>
+            <EmailButton
+              href="mailto:andrepesce95@hotmail.com"
+              aria-label="e-mail"
+            >
+              Send me a message!
+            </EmailButton>
           </Column1>
         </ContactRow>
       </ContactWrapper>

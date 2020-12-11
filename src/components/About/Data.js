@@ -27,7 +27,7 @@ export const homeObjTwo = {
     lightTextDesc: true,
     topLine: 'Contact',
     headline: 'This is the Headline contact',
-    description: 'Email button or form goes here',
+    description: 'Have any questions or just want to say hello?',
     buttonLabel: 'Get started',
     imgStart: false,
     isVid: false,
