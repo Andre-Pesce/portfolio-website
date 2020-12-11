@@ -8,7 +8,7 @@ export const AboutContainer = styled.div`
 export const AboutWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 969px;
+  height: 728px;
   width: 100%;
   max-width: 1800px;
   margin-right: auto;
@@ -25,8 +25,7 @@ export const AboutRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
-  grid-template-areas: ${({ imgStart }) =>
-    imgStart ? `'col2 col1` : `'col1 col2'`};
+  grid-template-areas: 'col1';
 
   @media screen and (max-width: 768px) {
     grid-template-areas: ${({ imgStart }) =>
@@ -55,10 +54,9 @@ export const Column2 = styled.div`
   grid-area: col2;
 `;
 export const TextWrapper = styled.div`
-  max-width: 640px;
+  max-width: 1000px;
   padding-top: 0;
   padding-bottom: 60px;
-  padding-left: 100px;
 
   @media screen and (max-width: 768px) {
     padding-bottom: 0px;
@@ -72,12 +70,14 @@ export const TextWrapper = styled.div`
 
 export const TopLine = styled.p`
   color: #ff8300;
-  font-size: 16px;
+  font-size: 24px;
   line-height: 16px;
   font-weight: 700;
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 16px;
+  text-align: center;
+  padding-bottom: 20px;
 `;
 
 export const Heading = styled.h1`
@@ -93,7 +93,7 @@ export const Heading = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-  max-width: 600px;
+  max-width: 1200px;
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
