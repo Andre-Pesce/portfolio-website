@@ -1,13 +1,14 @@
 import React, { useState } from "react";
-import HeroSection from "../components/HeroSection/HeroSection";
 import Navbar from "../components/Navbar/Navbar";
 import Sidebar from "../components/Sidebar/Sidebar";
+import HeroSection from "../components/HeroSection/HeroSection";
 import Portfolio from "../components/Portfolio/Portfolio";
 import About from "../components/About/About";
-import Footer from "../components/Footer/Footer";
-import { homeObjOne, homeObjTwo, homeObjThree } from "../components/About/Data";
-import { portfolioData } from "../components/Portfolio/Data";
 import Contact from "../components/Contact/Contact";
+import Footer from "../components/Footer/Footer";
+import { portfolioData } from "../components/Portfolio/Data";
+import { aboutData } from "../components/About/Data";
+import { contactData } from "../components/Contact/Data";
 
 
 const Home = () => {
@@ -23,9 +24,8 @@ const Home = () => {
       <Navbar toggle={toggle} />
       <HeroSection />
       <Portfolio {...portfolioData} />
-      {/* <AboutSection {...homeObjThree}/> */}
-      <About {...homeObjOne}/>
-      <Contact {...homeObjTwo}/>
+      <About {...aboutData}/>
+      <Contact {...contactData}/>
       <Footer />
     </>
   );

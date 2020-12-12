@@ -1,39 +1,16 @@
 import React from "react";
-import { Button } from "../ButtonElements";
 
 import {
   AboutContainer,
   AboutWrapper,
   AboutRow,
   Column1,
-  Column2,
   TextWrapper,
   TopLine,
-  Heading,
   Subtitle,
-  BtnWrap,
-  ImgWrap,
-  Img,
-  Vid,
 } from "./AboutElements";
 
-const About = ({
-  lightBg,
-  id,
-  imgStart,
-  topLine,
-  lightText,
-  headline,
-  darkText,
-  description,
-  buttonLabel,
-  isVid,
-  img,
-  alt,
-  primary,
-  dark,
-  dark2,
-}) => {
+const About = ({ lightBg, id, imgStart, topLine, darkText, description }) => {
   return (
     <AboutContainer lightBg={lightBg} id={id}>
       <AboutWrapper>

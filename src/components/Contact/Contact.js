@@ -6,34 +6,12 @@ import {
   ContactWrapper,
   ContactRow,
   Column1,
-  Column2,
   TextWrapper,
   TopLine,
-  Heading,
   Subtitle,
-  BtnWrap,
-  ImgWrap,
-  Img,
-  Vid,
 } from "./ContactElements";
 
-const Contact = ({
-  lightBg,
-  id,
-  imgStart,
-  topLine,
-  lightText,
-  headline,
-  darkText,
-  description,
-  buttonLabel,
-  isVid,
-  img,
-  alt,
-  primary,
-  dark,
-  dark2,
-}) => {
+const Contact = ({ lightBg, id, imgStart, topLine, darkText, description }) => {
   return (
     <ContactContainer lightBg={lightBg} id={id}>
       <ContactWrapper>

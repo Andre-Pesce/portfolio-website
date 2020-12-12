@@ -10,9 +10,8 @@ export const portfolioData = {
     description: 'A web application developed for researchers at University of South Australia\'s Future Industries Institute (FII) conducting research on thin film coatings to store, manage & analyse test data. Functionality to upload various tests, sample metadata, export data, database search & filtering, data visualization and more. \nCreated with Django framework.',
     buttonLabel: 'Get started',
     imgStart: false,
-    isVid: true,
-    img: vid1,
-    alt: 'me',
+    vid: vid1,
+    alt: 'edms',
     dark: true,
     primary: true,
     darkText: false

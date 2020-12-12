@@ -25,7 +25,7 @@ export const AboutRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
-  grid-template-areas: 'col1';
+  grid-template-areas: "col1";
 
   @media screen and (max-width: 768px) {
     grid-template-areas: ${({ imgStart }) =>

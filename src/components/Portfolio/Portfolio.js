@@ -11,7 +11,6 @@ import {
   Heading,
   Subtitle,
   ImgWrap,
-  Img,
   Vid,
 } from "./PortfolioElements";
 
@@ -24,8 +23,7 @@ const Portfolio = ({
   headline,
   darkText,
   description,
-  isVid,
-  img,
+  vid,
   alt,
 }) => {
   return (
@@ -41,11 +39,7 @@ const Portfolio = ({
           </Column1>
           <Column2>
             <ImgWrap>
-              {isVid ? (
-                <Vid autoPlay loop muted src={img} type="video/mp4" />
-              ) : (
-                <Img src={img} alt={alt} />
-              )}
+              <Vid autoPlay loop muted src={vid} alt={alt} type="video/mp4" />
             </ImgWrap>
           </Column2>
         </PortfolioRow>
