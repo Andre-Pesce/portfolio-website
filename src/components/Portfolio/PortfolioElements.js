@@ -46,6 +46,7 @@ export const Column1 = styled.div`
 
   @media screen and (max-width: 768px) {
     margin-bottom: 0px;
+    padding: 0 0px;
   }
 `;
 
@@ -53,6 +54,10 @@ export const Column2 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col2;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 0px;
+  }
 `;
 export const TextWrapper = styled.div`
   max-width: 640px;
@@ -101,7 +106,8 @@ export const Subtitle = styled.p`
   color: ${({ darkText }) => (darkText ? "#fff" : "#010606")};
 
   @media screen and (max-width: 768px) {
-    margin-bottom: 0px;
+    margin-bottom: 10px;
+    font-size: 18px;
   }
 `;
 
@@ -123,7 +129,7 @@ export const Img = styled.img`
 
 export const Vid = styled.video`
   width: 100%;
-  margin: 0 0 10px 0;
+  margin: 0 0 20px 0;
   padding-right: 0;
 `;
 

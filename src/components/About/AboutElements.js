@@ -45,6 +45,7 @@ export const Column1 = styled.div`
 
   @media screen and (max-width: 768px) {
     margin-bottom: 0px;
+    padding: 0 0px;
   }
 `;
 
@@ -78,6 +79,10 @@ export const TopLine = styled.p`
   margin-bottom: 16px;
   text-align: center;
   padding-bottom: 20px;
+
+  @media screen and (max-width: 768px) {
+    text-align: left;
+  }
 `;
 
 export const Heading = styled.h1`

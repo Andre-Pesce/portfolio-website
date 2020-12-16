@@ -13,6 +13,10 @@ export const FooterWrap = styled.div`
   align-items: center;
   max-width: 1100px;
   margin: 0 auto;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 25px;
+  }
 `;
 
 export const FooterLinksContainer = styled.div`

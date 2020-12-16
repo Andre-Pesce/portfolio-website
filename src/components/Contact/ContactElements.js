@@ -17,7 +17,7 @@ export const ContactWrapper = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 768px) {
-    height: 730px;
+    height: 700px;
   }
 `;
 
@@ -45,6 +45,7 @@ export const Column1 = styled.div`
 
   @media screen and (max-width: 768px) {
     margin-bottom: 0px;
+    padding: 0 0px;
   }
 `;
 
@@ -62,9 +63,9 @@ export const TextWrapper = styled.div`
     padding-left: 0px;
   }
 
-  @media screen and (max-width: 1209px) {
+  ${'' /* @media screen and (max-width: 1209px) {
     margin-top: 40px;
-  }
+  } */}
 `;
 
 export const TopLine = styled.p`
@@ -77,6 +78,10 @@ export const TopLine = styled.p`
   margin-bottom: 16px;
   text-align: center;
   padding-bottom: 20px;
+
+  @media screen and (max-width: 768px) {
+    text-align: left;
+  }
 `;
 
 export const Heading = styled.h1`
@@ -99,9 +104,6 @@ export const Subtitle = styled.p`
   white-space: pre-wrap;
   color: ${({ darkText }) => (darkText ? "#fff" : "#010606")};
 
-  @media screen and (max-width: 768px) {
-    margin-bottom: 0px;
-  }
 `;
 
 export const BtnWrap = styled.div`
