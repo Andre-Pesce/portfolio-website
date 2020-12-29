@@ -1,4 +1,4 @@
-import vid1 from "../../assets/videos/edms-demo-1.mp4";
+import vid1 from "../../assets/videos/edms-demo-2.mp4";
 
 export const portfolioData = {
     id: 'portfolio',
