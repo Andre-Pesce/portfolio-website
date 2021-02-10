@@ -77,4 +77,9 @@ export const EmailButton = styled.a`
     background-color: #FF8300;
     color: white;
   }
+
+  @media screen and (max-width: 768px) {
+    margin-left: 0px;
+  }
 `;
+

@@ -65,3 +65,9 @@ export const SidebarLink = styled(LinkS)`
     transition: 0.2s ease-in-out;
   }
 `;
+
+export const SideBtnWrap = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
