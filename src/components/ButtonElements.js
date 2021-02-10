@@ -62,7 +62,7 @@ export const EmailButton = styled.a`
   font-size: 16px;
   margin-top: 14px;
   margin-bottom: 10px;
-  margin-left: 24px;
+  margin-left: 0px;
   text-decoration: none;
   text-align: center;
   outline: none;
@@ -78,8 +78,5 @@ export const EmailButton = styled.a`
     color: white;
   }
 
-  @media screen and (max-width: 768px) {
-    margin-left: 0px;
-  }
 `;
 
