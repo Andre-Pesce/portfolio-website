@@ -48,6 +48,10 @@ export const ResumeButton = styled.a`
     transition: all 0.2s ease-in-out;
     background-color: rgba(255, 131, 0, 0.2);
   }
+
+  @media screen and (max-width: 768px) {
+    margin-left: 0px;
+  }    
 `;
 
 export const EmailButton = styled.a`
