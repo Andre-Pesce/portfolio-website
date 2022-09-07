@@ -5,7 +5,7 @@ export const aboutData = {
     lightTextDesc: false,
     topLine: 'About Me',
     headline: 'This is the Headline about me',
-    description: 'I\'m a junior software developer with attention to detail. I\'m very interested in all kinds of technology and am eager to gain more experience in software development, web design and interface design. \nI enjoy working on projects that I feel passionate about and learning new frameworks.\n\nWith recently completing my Bachelor of Information Technology in Software Development at The University of South Australia, and experience working at Lockheed Martin Australia under the graduate program, I\'m motivated to further my career!',
+    description: 'I\'m a software engineer with great attention to detail. I\'m super interested in all kinds of technologies and am very eager to gain more experience in full stack development, web/app development, interface design, cloud services, machine learning and expanding my software engineering skills.\n\nI enjoy working on projects that I feel passionate about and learning new frameworks or programming languages. I strive to quickly become an extremely capable and well rounded software engineer so I can have the ability to create something impactful in the world.\n\nSince completing a Bachelor of Information Technology in Software Development at The University of South Australia, I have been working at Lockheed Martin Australia for over a year. I\'m always motivated to further my career and take on challenges that allow me to grow!',
     buttonLabel: 'Get started',
     imgStart: false,
     isVid: false,
