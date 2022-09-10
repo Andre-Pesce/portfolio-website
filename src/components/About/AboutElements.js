@@ -17,7 +17,7 @@ export const AboutWrapper = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 768px) {
-    height: 760px;
+    height: 850px;
   }
 `;
 
